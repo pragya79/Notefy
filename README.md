@@ -1,46 +1,91 @@
-# Getting Started with Create React App
+# Notefy
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Notefy is a feature-rich React application that allows users to create, manage, and customize notes efficiently. Built using TypeScript and styled with Bootstrap, it provides a clean and intuitive user interface for a seamless note-taking experience.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Create Notes**: Effortlessly add new notes to keep track of your tasks and ideas.
+- **Delete Notes**: Remove unwanted notes with a single click.
+- **Theme Customization**: Change the background theme of your notes to suit your preferences.
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Frontend**: React (with TypeScript)
+- **Styling**: Bootstrap
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Installation
 
-### `npm test`
+Follow these steps to set up the project locally:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/pragya79/notefy.git
+   ```
 
-### `npm run build`
+2. Navigate to the project directory:
+   ```bash
+   cd notefy
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Start the development server:
+   ```bash
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. Open the application in your browser at:
+   ```
+   http://localhost:3000
+   ```
 
-### `npm run eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Open the application.
+2. Use the "Create" button to create a new note.
+3. Click on the color palette icon to change the note's background theme.
+4. Use the delete icon to remove a note.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Folder Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The project follows a modular structure for easy scalability:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+Notefy/
+├── src/
+│   ├── components/        # Reusable components like NoteCard, ThemeSelector
+│   ├── models/             # Page-level components
+│   ├── App.tsx           # Main app component
+│   └── index.tsx         # Entry point
+├── public/                # Public assets
+├── package.json           # Project dependencies and scripts
+└── README.md              # Documentation
+```
 
-## Learn More
+## Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Contributions are welcome! Follow these steps to contribute:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Make your changes and commit them:
+   ```bash
+   git commit -m "Add a meaningful commit message"
+   ```
+4. Push to your branch:
+   ```bash
+   git push origin feature-name
+   ```
+5. Open a pull request on GitHub.
+
+
+---
+
+Feel free to explore and customize Notefy to enhance your note-taking experience! If you encounter any issues or have feature suggestions, please create an issue in the repository.
+
